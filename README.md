@@ -10,23 +10,26 @@
 This project explores orientation pinwheel patterns in the visual cortex  and their information-theoretic properties using Fisher information.  
 
 It is an independant personal project, experimenting with neural dynamics, simulations, and coding explorations.  
-The goal is to explore how orientation selectivity is represented around pinwheel centers and investigate the behavior of Fisher information as the number of stimuli increases, with and without a prior.
+The goal is to investigate the behavior of Fisher information as the number of stimuli increases, with a von mises and a uniform prior.
 
 ---
 
 ## What's in this repo
 
-- `orientation-pinwheels.ipynb` -> Main Colab notebook for simulations and analysis   
-- `figures/` -> Generated plots 
+- `orientation-pinwheels.ipynb` -> Main Colab containing the full simulation and analysis pipeline. includes exploratory code, left intentionally messy. 
+- `FI_map(uniform prior).ipynb` -> Colab notebook for visualizing FI using a uniform prior, stimuli orientations evenly placed.
+- `FI_map(von mises prior).ipynb` -> Colab notebook for visualizing FI using a uniform prior, stimuli orientations sampled from a von mises prior.
+- `mean-variance(uniform prior).ipynb` -> Colab notebook for plotting mean and variance of FI at the pinwheel center as number of stimuli N varies, with evenly spaced stimulus orientations.
+- `mean-variance(von mises prior).ipynb` -> Colab notebook for plotting mean and variance of FI at the pinwheel center as number of stimuli N varies, with stimulus orientations sampled from a von mises prior.
 - `README.md` -> Project description and instructions  
 
 ---
 
 ## How to run
 
-1. Open the notebook in [Google Colab](https://colab.research.google.com/)  
+1. Open the notebook in Google colab
 2. Run each cell sequentially  
-3. Modify parameters to explore different priors, noise levels, or grid sizes  
+3. Tweak parameters and experiment with different settings
 
 ---
 
